@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_home_category_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/component_home_category_btn_bg"
+    android:clipChildren="false"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_medium">
+
+    <ImageView
+        android:id="@+id/component_home_category_btn_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@drawable/component_home_category_btn_icon_bg"
+        android:padding="@dimen/spacing_small"
+        app:srcCompat="@drawable/arrow_bottom"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/component_home_category_btn_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_text" />
+
+    <TextView
+        android:id="@+id/component_home_category_btn_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubTitle"
+        android:textColor="@color/white_50"
+        android:textSize="@dimen/font_size_subtext" />
+</LinearLayout>

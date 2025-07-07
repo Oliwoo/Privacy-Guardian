@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_data_stored_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingTop="50dp"
+    tools:context=".fragments.MicAccessDateLogsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/fragment_data_stored_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_side_spacing">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:columnCount="2"
+                app:rowCount="2">
+
+                <com.unict.mobile.components.StatView
+                    android:id="@+id/fragment_data_stored_data_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+                <com.unict.mobile.components.StatView
+                    android:id="@+id/fragment_data_stored_data_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <Button
+                android:id="@+id/fragment_data_stored_delete_today_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:text="Delete today log's"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_size_small" />
+
+            <Button
+                android:id="@+id/fragment_data_stored_delete_all_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:text="Delete all log's"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_small" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

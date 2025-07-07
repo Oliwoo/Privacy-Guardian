@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Privacy Guardian</string>
+    <string name="accessibility_service_description">Monitora le app in foreground per rilevare l\'uso del microfono.</string>
+
+    <string name="last_report_formatter">Last report: %s</string>
+
+    <string name="loading">Loading..</string>
+
+    <string name="unknown_app_name">(Unknown)</string>
+    <string name="unknown_app_package">(Unknown)</string>
+    <string name="default_no_data">No data to view</string>
+    <string name="default_loading_message">Loading data..</string>
+
+    <!-- DATA STORED FRAGMENT -->
+    <string name="data_stored_size_desc">Size of stored log\'s</string>
+    <string name="data_stored_count_desc">Total of stored log\'s</string>
+    <string name="data_stored_delete_all_day_log_dialog_title">Delete today log\'s</string>
+    <string name="data_stored_delete_all_day_log_dialog_msg">Are you sure want delete all today log\'s?</string>
+    <string name="data_stored_delete_all_log_dialog_title">Delete all log\'s</string>
+    <string name="data_stored_delete_all_log_dialog_msg">Are you sure want delete all stored log\'s?</string>
+
+    <!-- HOME FRAGMENT -->
+    <string name="home_scan_result_type">Device risk level</string>
+    <string name="home_scan_result_desc">Privacy Risk level from your device microphone anomaly access</string>
+    <string name="home_btn_today_access_logs_title">Today access log\'s</string>
+    <string name="home_btn_today_access_logs_desc">Show today microphone access</string>
+    <string name="home_btn_stats_title">Weekly stats report</string>
+    <string name="home_btn_stats_desc">Show weekly collected stats</string>
+    <string name="home_btn_date_stored_logs_title">Dated log\'s</string>
+    <string name="home_btn_date_stored_logs_desc">Show microphone access log\'s by date</string>
+    <string name="home_btn_stored_data_title">Stored data</string>
+    <string name="home_btn_stored_data_desc">Manage all stored data</string>
+    <string name="home_btn_apps_with_access_title">App with microphone access</string>
+    <string name="home_btn_apps_with_access_desc">Show all app\'s with microphone access</string>
+
+    <!-- MIC ACCESS LOG FRAGMENT -->
+    <string name="mic_access_log_not_found">Log not found</string>
+    <string name="mic_access_log_title_formatter">Log %s</string>
+    <string name="mic_access_log_stat_rec_time">Recording time</string>
+    <string name="mic_access_log_stat_risk_level">Privacy risk level</string>
+    <string name="mic_access_log_stat_detected_apps">Detected app\'s</string>
+    <string name="mic_access_log_stat_detected_audio_type">Detected audio type\'s</string>
+    <string name="mic_access_log_stat_detected_apps_formatter">%d App\'s</string>
+    <string name="mic_access_log_stat_detected_audio_types_formatter">%d Type\'s</string>
+    <string name="mic_access_log_app_history_package_formatter">Package: %s</string>
+    <string name="mic_access_log_app_history_duration_formatter">Duration: %s</string>
+    <string name="mic_access_log_rec_type_history_risk_level_formatter">Risk level: %s</string>
+    <string name="mic_access_log_rec_type_history_duration_formatter">Duration: %s</string>
+    <string name="mic_access_log_rec_type_history_packages_formatter">Packages: %s</string>
+
+    <!-- MIC ACCESS DATE LOGS FRAGMENT -->
+    <string name="mic_access_date_logs_title_formatter">%s Log\'s</string>
+    <string name="mic_access_date_logs_stat_detected_anomalies">Detected anomalies</string>
+    <string name="mic_access_date_logs_stat_rec_time">Recoding time</string>
+    <string name="mic_access_date_logs_stat_detected_apps">Detected apps</string>
+    <string name="mic_access_date_logs_stat_last_log_time">Last log time</string>
+    <string name="mic_access_date_logs_anomalies_count_formatter">%d Anomalies</string>
+    <string name="mic_access_date_logs_detected_apps_formatter">%d App\'s</string>
+
+    <!-- ITEM MICROPHONE ACCESS LOG RECORDS -->
+    <string name="item_microphone_access_log_record_access_date">Access date</string>
+    <string name="item_microphone_access_log_record_mic_usage">Microphone usage</string>
+    <string name="item_microphone_access_log_record_anomaly_usage">Anomaly usage</string>
+    <string name="item_microphone_access_log_record_detected_apps">Detected app\'s</string>
+    <string name="item_microphone_access_log_record_detected_audio_types">Detected audio type\'s</string>
+    <string name="is_anomaly_bool_true">Yes</string>
+    <string name="is_anomaly_bool_false">No</string>
+    <string name="is_anomaly_str_true">Abnormal microphone access</string>
+    <string name="is_anomaly_str_false">Permitted microphone access</string>
+
+    <!-- PRIVACY RISK REPORT FRAGMENT - DEPRECATED -->
+    <string name="privacy_risk_report_scan_type">Detected risk level</string>
+    <string name="privacy_risk_report_scan_desc">Detected privacy risk level from anomaly microphone access</string>
+    <string name="privacy_risk_report_stat_detected_audio_types">Detected audio type\'s</string>
+    <string name="privacy_risk_report_stat_rec_time">Time under risk</string>
+    <string name="privacy_risk_report_detected_audio_types_formatter">%d Type\'s</string>
+
+
+    <!-- FRAGMENTS PAGE TITLE -->
+    <string name="date_stored_access_logs_title">Microphone access log\'s</string>
+    <string name="app_with_microphone_access_title">Apps with microphone access</string>
+    <string name="data_stored_title">Stored data</string>
+    <string name="mic_access_log_title">Microphone access log</string>
+    <string name="mic_access_date_logs_title">Microphone access log\'s</string>
+    <string name="privacy_risk_report_title">Privacy risk report</string>
+    <string name="week_stats_title">Week stats report</string>
+
+    <!-- SCAN RESULTS STRING -->
+    <string name="scan_result_bad">Bad</string>
+    <string name="scan_result_medium">Medium</string>
+    <string name="scan_result_good">Good</string>
+    <string name="scan_result_low">Low</string>
+    <string name="scan_result_high">High</string>
+    <string name="scan_result_loading">Loading</string>
+    <string name="scan_result_undefined">Undefined</string>
+
+    <!-- DEFAULT ADAPTERS ERRORS & EMPTY MESSAGES -->
+    <string name="default_base_recycle_view_empty_message">No data to view</string>
+    <string name="default_base_recycle_view_loading_message">Loading data</string>
+
+    <!-- DATE STORES LOG STRINGS -->
+    <string name="date_stored_log_count_formatter">%d Log\'s stored</string>
+    <string name="date_stored_log_empty_message">No log\'s to view</string>
+    <string name="date_stored_log_loading_message">Loading all stored logs..</string>
+
+    <!-- APP ACCESS LOG STRINGS -->
+    <string name="app_access_log_duration_formatted">Duration: %s</string>
+    <string name="app_access_log_empty_message">No app\'s to show</string>
+    <string name="app_access_log_loading_message">Loading detected app history..</string>
+
+    <!-- MICROPHONE ACCESS LOG STRINGS -->
+    <string name="microphone_access_log_empty_message">No log\'s to view</string>
+    <string name="microphone_access_log_loading_message">Loading log\'s..</string>
+
+    <!-- APP WITH MICROPHONE ACCESS STRING -->
+    <string name="app_with_microphone_access_empty_message">No app\'s to show</string>
+    <string name="app_with_microphone_access_loading_message">loading app\'s with microphone access and permission..</string>
+
+    <!-- RECORDED AUDIO TYPE STRINGS -->
+    <string name="recorded_audio_type_empty_message">No recording type\'s to view</string>
+    <string name="recorded_audio_type_loading_message">Loading detected recoding type\'s..</string>
+    <string name="recorded_audio_type_log_risk_level_formatted">Risk level: %s</string>
+    <string name="fragment_stats_chart_desc">The chart below provides a breakdown of the number of anomalies identified on each day of the week</string>
+    <string name="fragment_stats_chart_label">Anomalies per day (avg)</string>
+    <string name="component_base_recycle_view_no_data_msg">No data to view</string>
+    <string name="fragment_home_credits">Mobile programming - Università degli studi di Catania.\n\nDeveloped by Damiano Caccamo - 1000044240</string>
+    <string name="fragment_mic_usage_log_app_history_section_title">App\'s detection history</string>
+    <string name="fragment_mic_usage_log_audio_type_history_section_title">Audio type\'s detection history</string>
+    <string name="fragment_mic_usage_log_error_message">Log not found</string>
+    <string name="fragment_mic_usage_logs_list_section_title">Today microphone access log\'s</string>
+
+    <string name="fragment_stats_apps_package_formatter">Package: %s</string>
+    <string name="fragment_stats_apps_date_formatter">Date: %s</string>
+    <string name="fragment_stats_apps_duration_formatter">Duaration: %s</string>
+    <string name="fragment_stats_rec_type_risk_level_formatter">Risk level: %s</string>
+    <string name="fragment_stats_rec_type_date_formatter">Date: %s</string>
+    <string name="fragment_stats_rec_type_duration_formatter">Duration: %s</string>
+    <string name="main_activity_on_permission_denied">Uno o più permessi runtime sono stati negati. Il servizio non verrà avviato.</string>
+    <string name="main_activity_on_permission_denied_toast">Alcuni permessi essenziali sono stati negati. Funzionalità limitata.</string>
+    <string name="main_activity_on_usage_stats_permission_granted">Permesso \'Accesso ai dati di utilizzo\' concesso.</string>
+    <string name="main_activity_on_usage_stats_permission_denied">Permesso \'Accesso ai dati di utilizzo\' negato. Il monitoraggio delle app in primo piano potrebbe essere limitato.</string>
+    <string name="main_activity_on_accessibility_permission_granted">Servizio di accessibilità abilitato.</string>
+    <string name="main_activity_on_accessibility_permission_denied">Servizio di accessibilità non abilitato. Alcune funzionalità di monitoraggio non saranno disponibili.</string>
+
+</resources>

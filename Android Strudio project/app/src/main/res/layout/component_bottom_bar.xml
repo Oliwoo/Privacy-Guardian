@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/screen_side_spacing"
+    android:background="@drawable/component_home_category_btn_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/component_bottom_bar_today_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/microphone"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/component_bottom_bar_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/chart_square"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/component_bottom_bar_home"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="-16dp"
+        android:background="@drawable/dot"
+        android:padding="16dp"
+        app:srcCompat="@drawable/home"
+        app:tint="@color/gray"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/component_bottom_bar_all_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/calendar"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/component_bottom_bar_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/data_stored"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_stats_refresh"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/fragment_top_spacing"
+        android:paddingBottom="@dimen/fragment_bottom_spacing"
+        tools:context=".fragments.StatsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_side_spacing">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_stats_date_range"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Week stats"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_huge" />
+
+                <ImageView
+                    android:id="@+id/fragment_stats_week_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/dot"
+                    android:padding="12dp"
+                    app:srcCompat="@drawable/arrow_left"
+                    app:tint="@android:color/black"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/fragment_stats_week_after"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/dot"
+                    android:padding="12dp"
+                    app:srcCompat="@drawable/arrow_right"
+                    app:tint="@android:color/black"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/fragment_stats_week_select_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/dot"
+                    android:padding="12dp"
+                    app:srcCompat="@drawable/calendar"
+                    app:tint="@android:color/black"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@drawable/component_home_category_btn_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/screen_side_spacing">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fragment_stats_total_week_anomalies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/spacing_tiny"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="@string/fragment_stats_chart_label"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_stats_chart_desc"
+                    android:textColor="@color/white_50"
+                    android:textSize="@dimen/font_size_small"
+                    app:lineHeight="@dimen/font_size_normal" />
+
+                <com.unict.mobile.components.BarChart
+                    android:id="@+id/fragment_stats_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Detected app's details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_subtitle" />
+
+            <com.unict.mobile.components.BaseRecyclerViewContainer
+                android:id="@+id/fragment_stats_app_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@drawable/component_home_category_btn_bg"
+                android:padding="@dimen/spacing_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Detected Recording type details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_subtitle" />
+
+            <com.unict.mobile.components.BaseRecyclerViewContainer
+                android:id="@+id/fragment_stats_rec_type_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@drawable/component_home_category_btn_bg"
+                android:padding="@dimen/spacing_medium">
+
+            </com.unict.mobile.components.BaseRecyclerViewContainer>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#111111</color>
+    <color name="gray">#181818</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#E52323</color>
+    <color name="yellow">#FFDE21</color>
+    <color name="green">#02B875</color>
+
+    <color name="good">#143C22</color>
+    <color name="medium">#392D17</color>
+    <color name="bad">#421515</color>
+
+    <!-- PALETTE COLORS VARIATIONS -->
+    <color name="gray_100">#FF111111</color>
+    <color name="gray_90">#E6111111</color>
+    <color name="gray_80">#CC111111</color>
+    <color name="gray_75">#BF111111</color>
+    <color name="gray_70">#B3111111</color>
+    <color name="gray_60">#99111111</color>
+    <color name="gray_50">#80111111</color>
+    <color name="gray_40">#66111111</color>
+    <color name="gray_30">#4D111111</color>
+    <color name="gray_25">#40111111</color>
+    <color name="gray_20">#33111111</color>
+    <color name="gray_10">#1111111a</color>
+
+    <color name="white_100">#FFFFFFFF</color>
+    <color name="white_90">#E6FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_75">#BFFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_25">#40FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+</resources>

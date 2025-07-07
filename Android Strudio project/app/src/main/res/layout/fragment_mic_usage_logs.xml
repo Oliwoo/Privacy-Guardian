@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_mic_usage_logs_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".fragments.MicAccessDateLogsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/fragment_top_spacing"
+        android:paddingBottom="@dimen/fragment_bottom_spacing">
+
+        <LinearLayout
+            android:id="@+id/fragment_mic_usage_logs_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_side_spacing">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:columnCount="2"
+                app:rowCount="2">
+
+                <com.unict.mobile.components.StatView
+                    android:id="@+id/fragment_mic_usage_logs_data_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+                <com.unict.mobile.components.StatView
+                    android:id="@+id/fragment_mic_usage_logs_data_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+                <com.unict.mobile.components.StatView
+                    android:id="@+id/fragment_mic_usage_logs_data_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+
+                <com.unict.mobile.components.StatView
+                    android:id="@+id/fragment_mic_usage_logs_data_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" />
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:fontFamily="@font/inter_semibold"
+                android:text="@string/fragment_mic_usage_logs_list_section_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_subtitle" />
+
+            <com.unict.mobile.components.BaseRecyclerViewContainer
+                android:id="@+id/fragment_mic_usage_logs_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

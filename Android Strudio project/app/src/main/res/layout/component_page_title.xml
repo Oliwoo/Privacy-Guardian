@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_page_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="@dimen/screen_side_spacing"
+    android:paddingTop="@dimen/spacing_medium"
+    android:paddingRight="@dimen/screen_side_spacing"
+    android:paddingBottom="@dimen/spacing_medium">
+
+    <ImageView
+        android:id="@+id/component_page_title_go_back"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/arrow_left"
+        tools:visibility="visible"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/component_page_title_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Page name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_subtitle" />
+
+    <ImageView
+        android:id="@+id/component_page_title_settings"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/arrow_right"
+        tools:visibility="visible"
+        tools:ignore="ContentDescription" />
+</LinearLayout>
